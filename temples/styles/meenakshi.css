@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #f8ebe0, #f4d6b2);
+    color: #5a3217;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/meenakshi-temple-banner.jpg') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Main Container */
+.container {
+    max-width: 1080px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    font-size: 22px;
+    color: #7d2d13;
+    border-bottom: 2px solid #a4521d;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #a4521d;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #8b3e1c;
+}
+
+.back-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+    width: 500px;
+    height: 250px;
+}
+
+.gallery img {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.gallery img.active {
+    opacity: 1;
+}
+
+.gallery-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.gallery-btn.prev {
+    left: 10px;
+}
+
+.gallery-btn.next {
+    right: 10px;
+}
+
+.gallery-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Remove bullet points */
+#temple-pujas {
+    list-style-type: none;
+    padding: 0;
+}
+
+#temple-pujas li {
+    background: #f9f9f9; /* Light background */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7d2d13;
+    transition: transform 0.3s ease-in-out;
+}
+
+#temple-pujas li:hover {
+    transform: scale(1.05);
+    background: #eac092;
+}
+
+/* Styling for temple name */
+#temple-name {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #7d2d13; /* Dark brown for a traditional look */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Temple image styling */
+#temple-name-container img {
+    display: relative;
+    margin: 0 auto;
+    width: 720px; /* Adjust size */
+    height: auto;
+    border-radius: 20px; /* Optional rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}

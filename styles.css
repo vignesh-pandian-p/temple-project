@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c76a04;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('assets/madurai-3.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    max-width: 750px;
+    margin: 0 auto 25px;
+    opacity: 0.9;
+  }
+  
+  .hero button {
+    background-color: rgba(255, 215, 0, 0.8);
+    color: black;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: rgba(255, 223, 50, 1);
+  }
+  
+  /* Cards Section */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background: #c76a04;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 320px;
+    flex: 1 1 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img, .card i {
+    font-size: 50px;
+    color: #c76a04;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    color: #003c5f;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #555;
+    max-width: 90%;
+  }
+  
+  .card a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
